@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
 
-ech "Hello world"
+echo "Hello world"
 
 
