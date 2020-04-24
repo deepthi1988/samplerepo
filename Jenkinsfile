@@ -2,12 +2,12 @@
 
 echo "Hello world"
 
-#1 define required variables
-#2 select jeniks node
-#3 CHECKOUT CODE
-#4 Build code
-#5 Test code
-#6 Deploy code to dev server
+# define required variables
+# select jeniks node
+# CHECKOUT CODE
+# Build code
+# Test code
+# Deploy code to dev server
 def TOMCAT_WEBAPP="/opt/app/workload/tomcat/webapps/"
 node ("master") {
   stage('checkout') {
