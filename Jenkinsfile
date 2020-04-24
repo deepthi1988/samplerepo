@@ -8,7 +8,7 @@ echo "Hello world"
 # Build code
 # Test code
 # Deploy code to dev server */
-def TOMCAT_WEBAPP="/opt/app/workload/tomcat/webapps/"
+def TOMCAT_WEBAPP="/opt/app/workload/tomcat/apache-tomcat-9.0.34/webapps/"
 node ("master") {
   stage('checkout') {
     checkout scm
