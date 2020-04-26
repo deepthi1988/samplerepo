@@ -25,7 +25,7 @@ node ("master") {
     sh "cp ./code/sample.war ${TOMCAT_WEBAPP}"
   }
     else {
-      echo "You are not in master branch and it is going to deploy"
+      echo "You are not in master branch and it is not going to deploy"
     }
   }
   }
