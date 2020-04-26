@@ -20,6 +20,12 @@ node ("master") {
    echo " Testing code"
   }
   stage('Deploy code to dev server') {
+   // if banchname is master then only deploy code
+    if(env.BRANCH_NAME = "master") {
     sh "cp ./code/sample.war ${TOMCAT_WEBAPP}"
+  }
+    else {
+      echo "You are not in master branch and it is going to deploy"
+    }
   }
   }
