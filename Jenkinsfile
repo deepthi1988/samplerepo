@@ -23,9 +23,10 @@ node ("master") {
    // if banchname is master then only deploy code
     if(env.BRANCH_NAME == "master") {
     sh "cp ./code/sample.war ${TOMCAT_WEBAPP}"
+      echo "Deployed in master environment"
   }
     else {
       echo "You are not in master branch and it is not going to deploy"
     }
-  }
+     }
   }
