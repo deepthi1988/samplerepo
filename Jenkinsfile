@@ -21,7 +21,7 @@ node ("master") {
   }
   stage('Deploy code to dev server') {
    // if banchname is master then only deploy code
-    if(env.BRANCH_NAME = "master") {
+    if(env.BRANCH_NAME == "master") {
     sh "cp ./code/sample.war ${TOMCAT_WEBAPP}"
   }
     else {
