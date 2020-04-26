@@ -18,6 +18,7 @@ node ("master") {
   }
   stage('Test code') {
    echo " Testing code"
+    sh "./example.sh ${BUILD_NUMBER}"
   }
   stage('Deploy code to dev server') {
    // if banchname is master then only deploy code
